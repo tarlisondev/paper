@@ -151,7 +151,7 @@ const formularioCriarTask = (id) => {
     const task = await fetch(baseURL + "task_post.php", {
       method: "post",
       mode: "cors",
-      //headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: formData,
     })
 
@@ -410,7 +410,7 @@ const criarUsuario = async () => {
   const criar = await fetch(baseURL + "user_post.php", {
     method: "post",
     mode: "cors",
-    //headers: { "Content-Type": "application/json", },
+    headers: { "Content-Type": "application/json", },
     body: formData
   })
 
